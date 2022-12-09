@@ -1,0 +1,135 @@
+.header__img {
+  position: relative;
+}
+.header__img img {
+  width: 100%;
+}
+.header__title {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 10px;
+  color: white;
+}
+.header__title h1 {
+  font-size: 2.4em;
+}
+@media (min-width: 768px) {
+  .header__title h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1400px) {
+  .header__title h1 {
+    font-size: 3.5rem;
+  }
+}
+.header__title p {
+  font-size: 1.3em;
+}
+@media (min-width: 768px) {
+  .header__title p {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 1400px) {
+  .header__title p {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 600px) {
+  .header__title {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    bottom: auto;
+    right: 0;
+  }
+}
+
+.section {
+  margin: 150px 0;
+  text-align: center;
+}
+.section h2 {
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  .section h2 {
+    font-size: 3em;
+  }
+}
+.section__cards {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .section__cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.section__cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #eeeeee;
+}
+@media (min-width: 600px) {
+  .section__cards__item {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .section__cards__item {
+    width: 30%;
+    margin: 10px;
+  }
+}
+.section__cards__item img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 600px) {
+  .section__cards__item img {
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+  }
+}
+.section__cards__item h3 {
+  margin: 0;
+  font-size: 1.3em;
+}
+.section__cards__item button {
+  margin: 0 auto;
+  margin-top: auto !important;
+  max-width: 200px;
+}
+.section__cards:hover h3 {
+  color: #dc5f00;
+}
+
+.ui.container {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.ui.card {
+  display: inline-block;
+}
+
+.section__btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
