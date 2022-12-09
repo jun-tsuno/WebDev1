@@ -1,5 +1,13 @@
 @use "../util/" as u;
 
+.ui.inverted.menu {
+	background: u.$secondary-background-color;
+
+	& a:hover {
+		color: u.$accent-color !important;
+	}
+}
+
 .header {
 	&__img {
 		position: relative;
@@ -122,13 +130,106 @@
 .ui.container {
 	overflow: auto;
 	white-space: nowrap;
+	width: inherit;
+	max-width: 1600px !important;
 }
 .ui.card {
 	display: inline-block;
+	margin: 10px !important;
+
+	& a:hover {
+		color: u.$accent-color !important;
+		font-weight: bold;
+	}
+}
+
+@include u.breakpoint(medium) {
+	.ui.container {
+		overflow: inherit;
+		white-space: inherit;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@include u.breakpoint(large) {
+	.ui.container {
+		font-size: 1.2em;
+	}
 }
 
 .section__btn {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.section {
+	&__card__img {
+		& img {
+			width: 100%;
+			height: 300px !important;
+			object-fit: cover !important;
+		}
+	}
+}
+
+.footer {
+	background: u.$secondary-background-color;
+	color: u.$text-secondary-color;
+
+	&__section {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 15px;
+
+		@include u.breakpoint(medium) {
+			justify-content: center;
+		}
+
+		&__about,
+		&__links,
+		&__contact {
+			width: 45%;
+
+			@include u.breakpoint(medium) {
+				width: 30%;
+				max-width: 300px;
+				font-size: 1.2em;
+			}
+		}
+
+		& p {
+			font-weight: bold;
+		}
+
+		& ul {
+			list-style: none;
+			padding-left: 0;
+
+			& li {
+				margin-bottom: 5px;
+				padding-top: 15px;
+			}
+		}
+	}
+
+	&__copy {
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+.contact__p {
+	float: right;
+	left: 0;
+}
+
+.adr-icon {
+	float: left;
+}
+
+.adr-group {
+	float: left;
 }

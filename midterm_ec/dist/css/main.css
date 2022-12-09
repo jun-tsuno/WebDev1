@@ -1,3 +1,10 @@
+.ui.inverted.menu {
+  background: #414141;
+}
+.ui.inverted.menu a:hover {
+  color: #ff6d28 !important;
+}
+
 .header__img {
   position: relative;
 }
@@ -116,20 +123,101 @@
   max-width: 200px;
 }
 .section__cards:hover h3 {
-  color: #dc5f00;
+  color: #ff6d28;
 }
 
 .ui.container {
   overflow: auto;
   white-space: nowrap;
+  width: inherit;
+  max-width: 1600px !important;
 }
 
 .ui.card {
   display: inline-block;
+  margin: 10px !important;
+}
+.ui.card a:hover {
+  color: #ff6d28 !important;
+  font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .ui.container {
+    overflow: inherit;
+    white-space: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .ui.container {
+    font-size: 1.2em;
+  }
+}
 .section__btn {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.section__card__img img {
+  width: 100%;
+  height: 300px !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.footer {
+  background: #414141;
+  color: white;
+}
+.footer__section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .footer__section {
+    justify-content: center;
+  }
+}
+.footer__section__about, .footer__section__links, .footer__section__contact {
+  width: 45%;
+}
+@media (min-width: 768px) {
+  .footer__section__about, .footer__section__links, .footer__section__contact {
+    width: 30%;
+    max-width: 300px;
+    font-size: 1.2em;
+  }
+}
+.footer__section p {
+  font-weight: bold;
+}
+.footer__section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer__section ul li {
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+.footer__copy {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact__p {
+  float: right;
+  left: 0;
+}
+
+.adr-icon {
+  float: left;
+}
+
+.adr-group {
+  float: left;
 }/*# sourceMappingURL=main.css.map */
