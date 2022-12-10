@@ -11,4 +11,4 @@
 
 // window.addEventListener("resize", changeClassName);
 
-// // Change text color
+// // Change text colo

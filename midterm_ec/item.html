@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./dist/css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+		/>
+		<title>item</title>
+	</head>
+	<body>
+		<div class="item__container">
+			<div class="item">
+				<div class="item__description">
+					<div class="item__img">
+						<img src="./img/item1.jpg" alt="item-img" />
+					</div>
+
+					<h2>Item1</h2>
+					<h3>$500 + tax</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
+						deserunt voluptates quam assumenda minus tempore porro molestiae,
+						dolore quibusdam accusantium enim, ea blanditiis iusto? Iure aliquam
+						nesciunt obcaecati magnam officia.
+					</p>
+				</div>
+				<div class="item__order">
+					<table
+						class="item__description__table ui very basic collapsing celled table"
+					>
+						<thead>
+							<tr>
+								<th>Color</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="content">Orange</div>
+								</td>
+								<td>
+									<div class="ui selection dropdown">
+										<input type="hidden" name="gender" />
+										<i class="dropdown icon"></i>
+										<div class="default text">0</div>
+										<div class="menu">
+											<div class="item" data-value="1">1</div>
+											<div class="item" data-value="0">2</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="content">Turquoise</div>
+								</td>
+								<td>
+									<div class="ui selection dropdown">
+										<input type="hidden" name="gender" />
+										<i class="dropdown icon"></i>
+										<div class="default text">0</div>
+										<div class="menu">
+											<div class="item" data-value="1">1</div>
+											<div class="item" data-value="0">2</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="item__description__button">
+						<div
+							class="ui vertical animated button primary large fluid"
+							tabindex="0"
+						>
+							<div class="hidden content">Add to Cart</div>
+							<div class="visible content">
+								<i class="shop icon"></i>
+							</div>
+						</div>
+						<a href="./index.html">
+							<div class="item__description__button__home">
+								<button class="ui inverted secondary button large fluid">
+									Back to Shopping
+								</button>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
