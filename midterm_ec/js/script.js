@@ -1,16 +1,14 @@
-const targetNav = document.querySelector(".change-nav");
+// const targetNav = document.querySelector(".change-nav");
 
-// Change nav size
-const changeClassName = () => {
-	const smWindowSize = 600;
+// // Change nav size
+// const changeClassName = () => {
+// 	const smWindowSize = 600;
 
-	if (window.innerWidth >= smWindowSize) {
-		targetNav.classList.toggle("massive");
-	} else {
-		targetNav.classList.toggle("mini");
-	}
-};
+// 	if (window.innerWidth >= smWindowSize) {
+// 		targetNav.classList.replace("mini", "massive");
+// 	}
+// };
 
-window.addEventListener("resize", changeClassName);
+// window.addEventListener("resize", changeClassName);
 
-// Change text color
+// // Change text color

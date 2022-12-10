@@ -5,6 +5,22 @@
   color: #ff6d28 !important;
 }
 
+@media (min-width: 600px) {
+  .ui.mini.menu {
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .ui.mini.menu {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1400px) {
+  .ui.mini.menu {
+    font-size: 1.5em;
+  }
+}
+
 .header__img {
   position: relative;
 }
@@ -17,6 +33,28 @@
   bottom: 0;
   margin-bottom: 10px;
   color: white;
+  -webkit-animation: fadeIn 5s ease 1s 1 normal backwards;
+          animation: fadeIn 5s ease 1s 1 normal backwards;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .header__title h1 {
   font-size: 2.4em;
@@ -28,7 +66,7 @@
 }
 @media (min-width: 1400px) {
   .header__title h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 .header__title p {
@@ -47,8 +85,7 @@
 @media (min-width: 600px) {
   .header__title {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 40%;
     bottom: auto;
     right: 0;
   }
@@ -220,4 +257,79 @@
 
 .adr-group {
   float: left;
+}
+
+.cart {
+  position: relative;
+  height: 100vh;
+}
+.cart__list {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid gray;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .cart__list {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  .cart__list__section1 {
+    font-size: 1.5em;
+  }
+}
+.cart__list h2 {
+  margin: 50px 0;
+}
+@media (min-width: 768px) {
+  .cart__list h2 {
+    font-size: 1.5em;
+  }
+}
+.cart__list__button {
+  width: 200px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .cart__list__button {
+    width: 300px;
+  }
+}
+.cart__list__button button {
+  margin: 15px 0 !important;
+}
+.cart__list__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart__list__item {
+  background-color: #eeeeee;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 300px;
+}
+.cart__list__item img {
+  width: 80px;
+  margin: 0 30px;
+}
+.cart__list__item button {
+  margin-left: auto !important;
 }/*# sourceMappingURL=main.css.map */
